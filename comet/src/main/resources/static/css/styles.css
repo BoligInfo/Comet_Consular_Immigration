@@ -3,8 +3,9 @@
 .container {
     position: relative;
     text-align: center;
+    font-weight: bold;
     color: rgb(248,175,62);
-    font-size: x-large;
+    font-size: xx-large;
 }
 
 #country .centered {
@@ -21,4 +22,13 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.container a {
+    color: rgb(248,175,62);
+    text-decoration: none;
+}
+
+.icon {
+    max-width: 24%;
 }
