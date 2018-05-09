@@ -1,0 +1,78 @@
+<!-- This is the standard html file that all other html files will copy. // Patrick -->
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+
+<head th:fragment="site-head">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" th:href="@{/bootstrap/css/bootstrap.min.css}">
+    <link rel="stylesheet" href="/css/Footer-Dark.css" th:href="@{/css/Footer-Dark.css}">
+    <link rel="stylesheet" href="/css/styles.css" th:href="@{/css/styles.css}">
+    <link rel="stylesheet" href="/css/Team-Grid.css" th:href="@{/css/Team-Grid.css}">
+</head>
+<body>
+<header class="main-header" th:fragment="site-header">
+    <div class="container">
+        <div class="col">
+            <img src="https://cometconsular.com/wp-content/uploads/comet_header_airport.jpg
+            " alt="Comet Consular Services" />
+        </div>
+    </div>
+</header>
+
+<!-- Main Footer -->
+<footer class="main-footer" th:fragment="site-footer">
+    <div class="footer-dark" style="padding:20px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item" style="height:163px;width:228px;font-size:12px;padding:0px 15px;min-width:auto;max-width:20%;">
+                        <h3>Stockholm<br></h3><div>
+                        Box 19077<br>
+                        104 32 Stockholm<br>
+                        Office hours: Mon-Fri 08.00-17.00<br>
+                        Office open for clients: 08.30-15.30<br>
+                        E-mail: info@cometconsular.se</div></div>
+                    <div class="col-sm-6 col-md-3 item" style="font-size:12px;max-width:20%;">
+                        <h3>Gothenburg<br></h3><div>
+                        Box 5194<br>
+                        402 26 Göteborg<br>
+                        Office open for clients: 13.00-15.30<br>
+                        E-mail: info@cometconsular.se</div></div>
+                    <div class="col-sm-6 col-md-3 col-xl-3 offset-xl-0 item" style="font-size:12px;max-width:20%;">
+                        <h3 style="font-size:15px;">Copenhagen<br></h3><div>
+                        Langebrogade 5<br>
+                        1411 Copenhagen<br>
+                        Office hours: Mon-Fri 08.30-16.30<br>
+                        Office open for clients: 08.30-15.30<br>
+                        E-mail: info@cometconsular.dk</div></div>
+                    <div class="col-sm-6 col-md-3 item" style="font-size:12px;max-width:20%;">
+                        <h3 style="font-size:15px;">Oslo<br></h3><div>
+                        Postboks 371, Sentrum<br>
+                        0102 Oslo<br>
+                        Office hours: Mon-Fri 08.30-16.00<br>
+                        Office open for clients: 09.00-15.30<br>
+                        E-mail: info@cometconsular.no</div></div>
+                    <div class="col-sm-6 col-md-3 item" style="font-size:12px;max-width:20%;">
+                        <h3>Helsinki<br></h3><div>
+                        P.O. Box 32,<br>
+                        FI-00130 Helsinki<br>
+                        Office hours: Mon-Fri 09.00-16.00
+                        Office open for clients:<br>
+                        By appointment, to calendar<br>
+                        E-mail: info@cometconsular.fi<br></div></div>
+                </div>
+            </div>
+    </div>
+        <!-- Default to the left -->
+        <strong>Copyright &copy; 2018 <a href="#">Comet</a>.</strong> All rights reserved For Über Alles Mig.
+
+    <!-- REQUIRED JS SCRIPTS -->
+    <!-- jQuery 3 -->
+    <script src="/js/jquery.min.js"></script>
+    <!-- Bootstrap 3.3.7 -->
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+</footer>
+</body>
+</html>
