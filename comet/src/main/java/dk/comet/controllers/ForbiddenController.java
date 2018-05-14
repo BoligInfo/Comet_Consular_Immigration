@@ -13,7 +13,7 @@ package dk.comet.controllers;
 public class ForbiddenController {
 
     @RequestMapping(value={"/the_forbidden.html"}, method = RequestMethod.GET)
-    public ModelAndView forgotPassword(){
+    public ModelAndView forbidden(){
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("the_forbidden");
         return modelAndView;

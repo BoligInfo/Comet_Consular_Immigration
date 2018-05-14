@@ -13,7 +13,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class NationalityController {
 
     @RequestMapping(value={"/nationality.html"}, method = RequestMethod.GET)
-    public ModelAndView forgotPassword(){
+    public ModelAndView nationality(){
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("nationality");
         return modelAndView;

@@ -13,7 +13,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class NeedsController {
 
     @RequestMapping(value={"/us_needs.html"}, method = RequestMethod.GET)
-    public ModelAndView forgotPassword(){
+    public ModelAndView needs(){
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("us_needs");
         return modelAndView;
