@@ -6,38 +6,60 @@
 </head>
 
 <body>
-<header th:replace="layout :: site-header" />
-    <div class="team-grid" style="color:rgb(28,95,162);background-color:rgb(255,255,255);">
-            <p class="text-center" style="font-size:70px;color:rgb(248,175,62);"><strong>Choose your destination</strong></p>
-            <div class="row" style="padding: 50px;">
-                <div class="col container" id="country">
-                    <a href="us_needs.html">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1280px-Flag_of_the_United_States.svg.png" width="195" style="height:97.5px;" >
-                        <div class="centered">U.S.A.</div>
-                    </a>
-                </div>
-                <div class="col container" id="country">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/1200px-Flag_of_Canada_%28Pantone%29.svg.png" width="195">
-                    <div class="centered">CANADA</div>
-                </div>
-                <div class="col container" id="country">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Flag_of_New_Zealand.svg/2000px-Flag_of_New_Zealand.svg.png" width="195">
-                    <div class="centered">NEW ZEALAND</div>
-                </div>
-                <div class="col container" id="country">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1280px-Flag_of_the_United_Kingdom.svg.png" width="195">
-                    <div class="centered">U.K.</div>
-                </div>
-                <div class="col container" id="country">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/b/b9/Flag_of_Australia.svg" width="195">
-                    <div class="centered">AUSTRALIA</div>
-                </div>
-            </div>
+<header th:replace="layout :: site-header"/>
+<div class="team-grid" style="color:rgb(28,95,162);background-color:rgb(255,255,255);">
+    <p class="text-center" style="font-size:70px;color:rgb(87,87,86);"><strong>Choose your
+        destination</strong></p>
+    <div class="row" style="padding: 15px 50px 20px 50px;">
+        <div class="col container" id="country">
+            <a href="us_needs.html">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1280px-Flag_of_the_United_States.svg.png"
+                     width="195" style="height:97.5px;">
+                <!--<div class="centered">U.S.A.</div>-->
+            </a>
+        </div>
+        <div class="col container" id="country">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/1200px-Flag_of_Canada_%28Pantone%29.svg.png"
+                 width="195">
+            <!--<div class="centered">CANADA</div>-->
+        </div>
+        <div class="col container" id="country">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Flag_of_New_Zealand.svg/2000px-Flag_of_New_Zealand.svg.png"
+                 width="195">
+            <!--<div class="centered">NEW ZEALAND</div>-->
+        </div>
+        <div class="col container" id="country">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1280px-Flag_of_the_United_Kingdom.svg.png"
+                 width="195">
+            <!--<div class="centered">U.K.</div>-->
+        </div>
+        <div class="col container" id="country">
+            <img src="https://upload.wikimedia.org/wikipedia/en/b/b9/Flag_of_Australia.svg" width="195">
+            <!--<div class="centered">AUSTRALIA</div>-->
         </div>
     </div>
-
+    <div class="row" style="padding: 0px 50px 50px 50px;">
+        <div class="col container">
+            <div class="centered">U.S.A.</div>
+        </div>
+        <div class="col container">
+            <div class="centered">CANADA</div>
+        </div>
+        <div class="col container">
+            <div class="centered" style="white-space: nowrap">NEW ZEALAND</div>
+        </div>
+        <div class="col container">
+            <div class="centered">U.K</div>
+        </div>
+        <div class="col container">
+            <div class="centered">AUSTRALIA</div>
+        </div>
     </div>
-    <footer th:replace="layout :: site-footer" />
+</div>
+</div>
+
+</div>
+<footer th:replace="layout :: site-footer"/>
 </body>
 
 </html>

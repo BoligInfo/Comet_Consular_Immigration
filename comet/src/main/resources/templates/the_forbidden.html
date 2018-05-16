@@ -9,44 +9,51 @@
 <header th:replace="layout :: site-header"/>
 <div class="team-grid" style="color:rgb(28,95,162);background-color:rgb(255,255,255);">
     <p class="text-center"
-       style="font-size:70px;color:rgb(248,175,62);"><strong>Choose YES or NO for all questions</strong>
+       style="font-size:70px;color:rgb(87,87,86);"><strong>Choose YES or NO for all questions</strong>
     </p>
-    <form action="order_visa_link.html">
-        <div class="row" style="padding: 10px 50px 10px 50px;">
-            Have you ever visited one or more of the following countries?
-            <br>
-            IRAN, IRAQ, SYRIA, LIBYA, SUDAN, SOMALIA, YEMEN
-            <br>
-            <form action="" method="post">
-                <input type="radio" name="countries_visited" value="yes"/> YES
-                <input type="radio" name="countries_visited" value="no"/> NO
-            </form>
+    <form action="order_visa_link.html" method="post">
+        <div class="row" style="padding: 10px 50px 10px 50px;color:black;font-size: 25px;">
+            <div class="col-8">
+                Have you ever visited one or more of the following countries?
+                <br>
+                IRAN, IRAQ, SYRIA, LIBYA, SUDAN, SOMALIA, YEMEN
+                <br>
+            </div>
+            <div class="col-4">
+                <input type="checkbox" name="countries_visited" value="yes"/> YES
+                <input type="checkbox" name="countries_visited" value="no"/> NO
+            </div>
         </div>
-        <div class="row" style="padding: 10px 50px 10px 50px;">
-            Do you have ANY CRIMINAL RECORD?
-            <br>
-            <form action="" method="post">
-                <input type="radio" name="countries_visited" value="yes"/> YES
-                <input type="radio" name="countries_visited" value="no"/> NO
-            </form>
+        <div class="row" style="padding: 10px 50px 10px 50px;color:black;font-size: 25px;">
+            <div class="col-8">
+                Do you have ANY CRIMINAL RECORD?
+            </div>
+            <div class="col-4">
+                <input type="checkbox" name="countries_visited" value="yes"/> YES
+                <input type="checkbox" name="countries_visited" value="no"/> NO
+            </div>
         </div>
-        <div class="row" style="padding: 10px 50px 10px 50px;">
-            Are you planning on staying in USA for more than 3 months?
-            <br>
-            <form action="" method="post">
-                <input type="radio" name="countries_visited" value="yes"/> YES
-                <input type="radio" name="countries_visited" value="no"/> NO
-            </form>
+        <div class="row" style="padding: 10px 50px 10px 50px;color:black;font-size: 25px;">
+            <div class="col-8">
+                Are you planning on staying in USA for more than 3 months?
+            </div>
+            <div class="col-4">
+                <input type="checkbox" name="countries_visited" value="yes"/> YES
+                <input type="checkbox" name="countries_visited" value="no"/> NO
+            </div>
         </div>
-        <div class="row" style="padding: 10px 50px 10px 50px;">
-            Do you have any plans beside being a tourist or conducting business?
-            <br>
-            <form action="" method="post">
-                <input type="radio" name="countries_visited" value="yes"/> YES
-                <input type="radio" name="countries_visited" value="no"/> NO
-            </form>
+        <div class="row" style="padding: 10px 50px 10px 50px;color:black;font-size: 25px;">
+            <div class="col-8">
+                Do you have any plans beside being a tourist or conducting business?
+            </div>
+            <div class="col-4">
+                <input type="checkbox" name="countries_visited" value="yes"/> YES
+                <input type="checkbox" name="countries_visited" value="no"/> NO
+            </div>
         </div>
-        <input type="submit" value="CONTINUE" style="align-content: right; padding: 10px 50px 10px 50px;"/>
+        <div class="row ce" style="align-content:center; padding: 50px 50px 50px 50px;">
+            <input type="submit" value="CONTINUE"/>
+        </div>
     </form>
 </div>
 </div>
