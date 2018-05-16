@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
 
-<head th:fragment="site-head">
+<head th:fragment="site-head" style="overflow-x: hidden; ">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,8 @@
 
 <!-- Main Footer -->
 <footer class="main-footer" th:fragment="site-footer">
-    <div class="footer-dark" style="padding:20px;">
+    <div class="footer-dark" style="padding-top:20px; padding-bottom: 20px;  position:absolute;
+   bottom:0; width: 100%;">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6 col-md-3 item" style="height:163px;width:228px;font-size:12px;padding:0px 15px;min-width:auto;max-width:20%;">

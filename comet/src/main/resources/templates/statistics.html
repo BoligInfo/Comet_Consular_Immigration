@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+
+<head>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+    <link rel="stylesheet" href="/css/statistics.css" th:href="@{/css/statistics.css}">
+    <title>Staticstics</title>
+</head>
+
+<body>
+
+<div class="counter">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <div class="employees">
+                    <p class="counter-count"><span th:utext="${entity.amount}"></span></p>
+                    <p class="employee-p">Usa Amount</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <div class="customer">
+                    <p class="counter-count"><span th:utext="${entity.amount}"></span></p>
+                    <p class="customer-p">Pizza Amount</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <div class="design">
+                    <p class="counter-count"><span th:utext="${entity.amount}"></span></p>
+                    <p class="design-p">Burger Amount</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="/js/staticstics.js"></script>
+</html>
