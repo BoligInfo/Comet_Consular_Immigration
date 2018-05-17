@@ -17,15 +17,15 @@ public class CountryController {
 
     @Autowired
     private dk.comet.services.statisticsService statisticsService;
-/*
-    @RequestMapping(value={"/{country}/{question}"}, method = RequestMethod.GET)
-    public ModelAndView index(@PathVariable("country") String country, @PathVariable("question") String question){
+
+    @RequestMapping(value={"/question/{country}/{question}"}, method = RequestMethod.GET)
+    public ModelAndView question(@PathVariable("country") String country, @PathVariable("question") String question){
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("country/"+country);
         questions = statisticsService.showQuestion(Integer.parseInt(question));
         modelAndView.addObject("Questions", questions);
         return modelAndView;
-    }*/
+    }
 
 
 }
