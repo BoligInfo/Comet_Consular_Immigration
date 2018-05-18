@@ -12,9 +12,8 @@
        style="font-size:60px;color:rgb(87,87,86);"><strong>Choose the country where you hold a passport</strong></p>
     <div class="row" style="padding: 50px;">
         <div class="centered">
-            <form action="the_forbidden.html">
-
-                <select>
+            <form th:action="@{nationality}" method="post" role="form">
+                <select name="land">
                     <option value="Afghanistan" title="Afghanistan">Afghanistan</option>
                     <option value="Åland Islands" title="Åland Islands">Åland Islands</option>
                     <option value="Albania" title="Albania">Albania</option>
