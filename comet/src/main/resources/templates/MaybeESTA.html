@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+
+<head th:include="layout :: site-head">
+    <title>Comet choose your destination</title>
+</head>
+
+<body>
+<header th:replace="layout :: site-header"/>
+<div class="team-grid" style="color:rgb(28,95,162);background-color:rgb(255,255,255);">
+    <p class="text-center"
+       style="font-size:70px;color:rgb(87,87,86);"><strong>Choose YES or NO for all questions</strong>
+    </p>
+    <form action="order_visa_link.html" method="post">
+        <div class="row" style="padding: 10px 50px 10px 50px;color:black;font-size: 25px;">
+            <div class="col-8">
+                Have you ever visited one or more of the following countries?
+                <br>
+                IRAN, IRAQ, SYRIA, LIBYA, SUDAN, SOMALIA, YEMEN
+                <br>
+            </div>
+            <div class="col-4">
+                <input type="checkbox" name="countries_visited" value="yes"/> YES
+                <input type="checkbox" name="countries_visited" value="no"/> NO
+            </div>
+        </div>
+        <div class="row" style="padding: 10px 50px 10px 50px;color:black;font-size: 25px;">
+            <div class="col-8">
+                Do you have ANY CRIMINAL RECORD?
+            </div>
+            <div class="col-4">
+                <input type="checkbox" name="countries_visited" value="yes"/> YES
+                <input type="checkbox" name="countries_visited" value="no"/> NO
+            </div>
+        </div>
+        <div class="row" style="padding: 10px 50px 10px 50px;color:black;font-size: 25px;">
+            <div class="col-8">
+                Are you planning on staying in USA for more than 3 months?
+            </div>
+            <div class="col-4">
+                <input type="checkbox" name="countries_visited" value="yes"/> YES
+                <input type="checkbox" name="countries_visited" value="no"/> NO
+            </div>
+        </div>
+        <div class="row" style="padding: 10px 50px 10px 50px;color:black;font-size: 25px;">
+            <div class="col-8">
+                Do you have any plans beside being a tourist or conducting business?
+            </div>
+            <div class="col-4">
+                <input type="checkbox" name="countries_visited" value="yes"/> YES
+                <input type="checkbox" name="countries_visited" value="no"/> NO
+            </div>
+        </div>
+        <div class="row ce" style="align-content:center; padding: 50px 50px 50px 50px;">
+            <input type="submit" value="CONTINUE"/>
+        </div>
+    </form>
+</div>
+</div>
+
+</div>
+<footer th:replace="layout :: site-footer"/>
+</body>
+
+</html>

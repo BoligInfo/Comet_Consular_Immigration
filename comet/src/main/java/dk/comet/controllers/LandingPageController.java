@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 /**
- *  @author Steen Petersen
+ *  @author Stonie
  *
  */
 @Controller
