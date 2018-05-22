@@ -7,11 +7,15 @@
 <body>
 <h1 th:text= "${title}" />
 <p th:text="'Text from Q:   ' + ${text}" />
-<h1 th:text="'Paths -> ' + ${paths}" />
+
+<div class="row" th:each="option: ${options}">
+    <a th:href="@{'/ulrik?page=' + ${option.optionId}}" th:text="${option.text}">
+        text
+    </a>
+</div>
 
 
-
-<a href="/ulrik">link text</a>
+<a href="/ulrik?page=2">link text</a>
 
 
 </body>

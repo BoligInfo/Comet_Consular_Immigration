@@ -12,7 +12,7 @@ public class Question implements Comparable<Question> {
     private String title = "Tidøhl!";
     private String text = "Dægsd";
 
-    private List<Option> paths  = new ArrayList<>();
+    private List<Option> options = new ArrayList<>();
     //endregion
 
     //region --Constructors--
@@ -28,10 +28,10 @@ public class Question implements Comparable<Question> {
         this.title = title;
         this.text = text;
 
-        paths.add(new Option());
-        paths.add(new Option());
-        paths.add(new Option());
-        paths.add(new Option());
+        options.add(new Option());
+        options.add(new Option());
+        options.add(new Option());
+        options.add(new Option());
     }
 
     //endregion
@@ -53,8 +53,8 @@ public class Question implements Comparable<Question> {
         return text;
     }
 
-    public List<Option> getPaths() {
-        return paths;
+    public List<Option> getOptions() {
+        return options;
     }
 
     //endregion

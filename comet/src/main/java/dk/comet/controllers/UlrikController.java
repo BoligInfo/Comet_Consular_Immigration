@@ -22,7 +22,7 @@ public class UlrikController {
 
         model.addAttribute("title", q.getTitle());
         model.addAttribute("text", q.getText());
-        model.addAttribute("paths", q.getPaths());
+        model.addAttribute("options", q.getOptions());
 
         return "ulrik";
     }
