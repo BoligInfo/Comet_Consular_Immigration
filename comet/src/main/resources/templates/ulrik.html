@@ -5,8 +5,15 @@
     <title>Title</title>
 </head>
 <body>
-<h1>TEST</h1>
-<span th:utext="${Questions.question}"></span>
+<h1 th:text= "${title}" />
+<p th:text="'Text from Q:   ' + ${text}" />
+<h1 th:text="'Paths -> ' + ${paths}" />
+
+
+
+<a href="/ulrik">link text</a>
+
+
 </body>
 </htm+l>
 
