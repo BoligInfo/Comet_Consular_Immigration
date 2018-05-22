@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 
-<head>
-    <title>Title</title>
+<head th:include="layout :: site-head">
+    <title>Comet choose your destination</title>
 </head>
+
 <body>
+<header th:replace="layout :: site-header"/>
+
+
+
+
+
 <h1 th:text= "${title}" />
 <p th:text="'Text from Q:   ' + ${text}" />
 
 <div class="row" th:each="option: ${options}">
-    <a th:href="@{'/ulrik?page=' + ${option.optionId}}" th:text="${option.text}">
-        text
-    </a>
+        <a th:href="@{'/ulrik?page=' + ${option.optionId}}" th:text="${option.text}"/>
+
+    </div>
+
 </div>
 
 
