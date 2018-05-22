@@ -29,6 +29,10 @@
     text-decoration: none;
 }
 
+.text-center {
+    text-align: center;
+}
+
 .icon {
     max-width: 24%;
 }

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+
+<head th:include="layout :: site-head">
+    <title>Comet choose your destination</title>
+</head>
+
+<body>
+<header th:replace="layout :: site-header"/>
+<div class="team-grid" style="color:rgb(28,95,162);background-color:rgb(255,255,255);">
+    <p class="text-center" style="font-size:70px;color:rgb(87,87,86);"><strong>Choose your requirements</strong></p>
+    <div class="row" style="padding: 50px;">
+        <div class="col container icon" id="country">
+            <a href="LinkToEmailForm">
+                <img src="/images/work_permit.png">
+                <div class="centered" style="color: #1d2124">WORK PERMIT</div>
+            </a>
+        </div>
+        <div class="col container icon" id="country">
+            <a href="UKVisaInfoLink">
+                <img src="/images/crew_transit.png">
+                <div class="centered" style="color: #1d2124">CREW TRANSIT</div>
+            </a>
+        </div>
+        <div class="col container icon" id="country">
+            <a href="/question/UK/nationality">
+                <img src="/images/tourist_business.png">
+                <div class="centered" style="color: #1d2124">TOURIST OR BUSINESS</div>
+            </a>
+        </div>
+    </div>
+</div>
+</div>
+
+</div>
+<footer th:replace="layout :: site-footer"/>
+</body>
+
+</html>
