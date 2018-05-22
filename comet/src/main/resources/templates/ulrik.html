@@ -7,25 +7,37 @@
 
 <body>
 <header th:replace="layout :: site-header"/>
-
-
-
-
-
-<h1 th:text= "${title}" />
-<p th:text="'Text from Q:   ' + ${text}" />
-
-<div class="row" th:each="option: ${options}">
-        <a th:href="@{'/ulrik?page=' + ${option.optionId}}" th:text="${option.text}"/>
-
+<div class="team-grid" style="color:rgb(28,95,162);background-color:rgb(255,255,255);">
+    <div class="row" style="padding: 15px 50px 20px 50px;">
+        <p style="font-size:50px;color:rgb(87,87,86);"><strong class="text-center" th:text="${title}">Title</strong></p>
     </div>
+    <div class="row" style="padding: 15px 50px 20px 50px;">
+        <p th:text="'Text from Q:   ' + ${text}">text</p>
+    </div>
+
+    <div class="row" style="padding: 15px 50px 20px 50px;">
+        <div th:each="option: ${options}">
+            <a th:href="@{'/ulrik?page=' + ${option.optionId}}">
+                <div class="col container" th:text="${option.text}">
+                    PlaceholderText
+                </div>
+            </a>
+        </div>
+    </div>
+
+
+
+</div>
+<div class="row" style="padding: 15px 50px 20px 50px;">
+
+
+<a href="/ulrik?page=2">link text</a>
+</div>
 
 </div>
 
 
-<a href="/ulrik?page=2">link text</a>
-
-
+<footer th:replace="layout :: site-footer"/>
 </body>
-</htm+l>
 
+</html>
