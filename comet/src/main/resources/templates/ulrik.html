@@ -11,27 +11,42 @@
     <div class="row" style="padding: 15px 50px 20px 50px;">
         <p style="font-size:50px;color:rgb(87,87,86);"><strong class="text-center" th:text="${title}">Title</strong></p>
     </div>
+
+
     <div class="row" style="padding: 15px 50px 20px 50px;">
         <p th:text="'Text from Q:   ' + ${text}">text</p>
     </div>
 
-    <div class="row" style="padding: 15px 50px 20px 50px;">
-        <div th:each="option: ${options}">
-            <a th:href="@{'/ulrik?page=' + ${option.optionId}}">
-                <div class="col container" th:text="${option.text}">
-                    PlaceholderText
-                </div>
-            </a>
-        </div>
-    </div>
 
+    <div class="row" style="padding: 15px 50px 20px 50px;">
+        <form>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown button
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="ulrik">Something else here</a>
+                </div>
+            </div>
+            <div th:each="option: ${options}">
+
+                <a th:href="@{'/ulrik?page=' + ${option.optionId}}">
+                    <div class="col container" th:text="${option.text}">
+                        PlaceholderText
+                    </div>
+                </a>
+            </div>
+        </form>
+    </div>
 
 
 </div>
 <div class="row" style="padding: 15px 50px 20px 50px;">
 
 
-<a href="/ulrik?page=2">link text</a>
+    <a href="/ulrik?page=2">link text</a>
 </div>
 
 </div>
