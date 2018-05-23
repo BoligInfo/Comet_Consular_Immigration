@@ -19,6 +19,21 @@
 
 
     <div class="row" style="padding: 15px 50px 20px 50px;">
+
+        <div class="centered">
+            #th:object="${option}"
+            <form th:action="@{ulrik}"  method="post" role="form">
+                <select name="choice">
+                    <option th:each="option: ${options}"
+                            th:value="${option.id}"
+                            th:text="${option.text}">option</option>
+                </select>
+                <br><br>
+                <input type="submit" value="CONTINUE"/>
+            </form>
+
+        </div>
+
         <form>
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
