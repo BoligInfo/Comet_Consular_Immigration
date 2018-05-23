@@ -3,7 +3,7 @@ package dk.comet.services;
 import dk.comet.models.Questions;
 import dk.comet.models.Statistics;
 
-public interface statisticsService {
+public interface StatisticsService {
 
     void saveStatistics(Statistics statistics);
     Statistics opsætning(int amount);

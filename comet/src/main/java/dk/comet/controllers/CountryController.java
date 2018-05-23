@@ -3,7 +3,8 @@ package dk.comet.controllers;
 
 import dk.comet.models.Questions;
 import dk.comet.services.NationalityResponse;
-import dk.comet.services.statisticsService;
+import dk.comet.services.NationalityResponseService;
+import dk.comet.services.StatisticsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -18,10 +19,13 @@ public class CountryController {
     Questions questions = new Questions();
 
     @Autowired
-    private dk.comet.services.statisticsService statisticsService;
+    private StatisticsService statisticsService;
 
     @Autowired
     private NationalityResponse nationality;
+
+    @Autowired
+    private NationalityResponseService nationalityResponse;
 
     @RequestMapping(value={"/question/{country}"}, method = RequestMethod.GET)
     public ModelAndView question(@PathVariable("country") String country){
@@ -40,7 +44,8 @@ public class CountryController {
     @RequestMapping(value={"/question/{country}/nationality"}, method = RequestMethod.POST)
     public ModelAndView questionNation(@PathVariable("country") String country,@RequestParam String land){
         ModelAndView modelAndView = new ModelAndView();
-        modelAndView.setViewName(nationality.getNationalityResponseBasedOnCountry(land,country));
+        modelAndView.setViewName(nationalityResponse.getNationalityResponseBasedOnCountry(land,country));
+       // modelAndView.setViewName(nationality.getNationalityResponseBasedOnCountry(land,country));
         return modelAndView;
     }
 
@@ -49,7 +54,7 @@ public class CountryController {
     public ModelAndView question(@PathVariable("country") String country, @PathVariable("question") String question){
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("country/"+country);
-       // questions = statisticsService.showQuestion(Integer.parseInt(question));
+       // questions = StatisticsService.showQuestion(Integer.parseInt(question));
        // modelAndView.addObject("Questions", questions);
         return modelAndView;
     }*/

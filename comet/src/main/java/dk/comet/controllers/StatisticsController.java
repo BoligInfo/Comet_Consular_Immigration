@@ -2,7 +2,7 @@ package dk.comet.controllers;
 
 import dk.comet.models.Statistics;
 import dk.comet.repositories.StatisticsRepository;
-import dk.comet.services.statisticsService;
+import dk.comet.services.StatisticsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,13 +16,13 @@ public class StatisticsController {
     private StatisticsRepository statisticsRepository;
 
     @Autowired
-    private statisticsService statisticsService;
+    private StatisticsService StatisticsService;
 
     @RequestMapping(value = {"/statistics.html"}, method = RequestMethod.GET)
     public ModelAndView forbidden() {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("statistics");
-        Statistics stats = statisticsService.opsætning(50);
+        Statistics stats = StatisticsService.opsætning(50);
         modelAndView.addObject("entity",stats);
         return modelAndView;
     }

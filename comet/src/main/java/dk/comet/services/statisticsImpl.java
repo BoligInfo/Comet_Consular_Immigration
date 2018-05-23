@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service("statisticsImpl")
-public class statisticsImpl implements statisticsService{
+public class StatisticsImpl implements StatisticsService {
 
     @Autowired
     private StatisticsRepository statisticsRepository;

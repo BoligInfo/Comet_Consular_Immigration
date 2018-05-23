@@ -4,6 +4,6 @@ import java.util.ArrayList;
 
 public class AssessmentGraph {
 
-    ArrayList<Node> connections =
+   // ArrayList<Node> connections =
 
 }
