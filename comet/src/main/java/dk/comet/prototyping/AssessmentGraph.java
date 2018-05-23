@@ -5,9 +5,8 @@ import java.util.Collections;
 
 public class AssessmentGraph {
 
-<<<<<<< HEAD
    // ArrayList<Node> connections =
-=======
+
     //region -- Fields --
     private static AssessmentGraph ag = null;
 
@@ -54,6 +53,6 @@ public class AssessmentGraph {
 
         return new Question(-1, "Error","The page > " + qID + " < you requested does not exist!");
     }
->>>>>>> 14bba60dc18b941f3df678bfaaf7fa7951d3a3ad
+
 
 }

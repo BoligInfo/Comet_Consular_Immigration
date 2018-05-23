@@ -14,7 +14,7 @@ public class StatisticsImpl implements StatisticsService {
 
     @Override
     public void saveStatistics(Statistics statistics) {
-    statisticsRepository.save(statistics);
+        statisticsRepository.save(statistics);
     }
 
     @Override

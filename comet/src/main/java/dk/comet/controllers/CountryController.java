@@ -19,7 +19,7 @@ public class CountryController {
     Questions questions = new Questions();
 
     @Autowired
-    private StatisticsService statisticsService;
+    private StatisticsService StatisticsService;
 
     @Autowired
     private NationalityResponse nationality;
