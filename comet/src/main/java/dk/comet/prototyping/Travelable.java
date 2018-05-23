@@ -2,9 +2,9 @@ package dk.comet.prototyping;
 
 import java.util.ArrayList;
 
-public interface Node {
+public interface Travelable {
 
-    default ArrayList<Node> getConnections() {
+    default ArrayList<Travelable> getConnections() {
         return  null;
 
     }
